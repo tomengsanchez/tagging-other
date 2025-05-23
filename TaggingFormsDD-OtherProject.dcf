@@ -1,0 +1,278 @@
+{
+  "software": "CSPro", 
+  "version": 8.0, 
+  "fileType": "dictionary", 
+  "name": "TAGGINGFORMSDD_DICT_OTHER", 
+  "labels": [ { "text": "TaggingFormsDD_Other" } ], 
+  "security": {
+    "allowDataViewerModifications": false, 
+    "allowExport": true, 
+    "cachedPasswordMinutes": 0, 
+    "settings": "731064c3034ab897274f6ce8618a9a1329a606a1d8defe1c8cd9ddf0d66b23c230dcec38a43fb59d494638fa0b2182be"
+  }, 
+  "readOptimization": true, 
+  "recordType": {
+    "start": 1, 
+    "length": 1
+  }, 
+  "defaults": {
+    "decimalMark": true, 
+    "zeroFill": false
+  }, 
+  "relativePositions": true, 
+  "levels": [
+    {
+      "name": "TAGGINGFORMSDD_LEVEL", 
+      "labels": [ { "text": "TaggingFormsDD Level" } ], 
+      "ids": {
+        "items": [
+          {
+            "name": "PERSONAL_PROFILE", 
+            "labels": [ { "text": "Personal Profile" } ], 
+            "contentType": "numeric", 
+            "start": 2, 
+            "length": 11, 
+            "zeroFill": false
+          }
+        ]
+      }, 
+      "records": [
+        {
+          "name": "PERSONALPROFILES", 
+          "labels": [ { "text": "Personal Profile" } ], 
+          "recordType": "1", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "NAME", 
+              "labels": [ { "text": "Name" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "AGE", 
+              "labels": [ { "text": "Age" } ], 
+              "contentType": "numeric", 
+              "length": 3, 
+              "zeroFill": false
+            }, 
+            {
+              "name": "BIRTHDAY", 
+              "labels": [ { "text": "Birthday " } ], 
+              "contentType": "alpha", 
+              "length": 20
+            }, 
+            {
+              "name": "SEX", 
+              "labels": [ { "text": "Sex" } ], 
+              "contentType": "alpha", 
+              "length": 10, 
+              "valueSets": [
+                {
+                  "name": "SEX_VS1", 
+                  "labels": [ { "text": "Sex" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Male" } ], 
+                      "pairs": [ { "value": "male" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "Female" } ], 
+                      "pairs": [ { "value": "female" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "DO_YOU_RENT_OUT_YOUR_SPACE", 
+              "labels": [ { "text": "Do you rent out your space?" } ], 
+              "contentType": "numeric", 
+              "length": 1, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "DO_YOU_RENT_OUT_YOUR_SPACE_VS1", 
+                  "labels": [ { "text": "Do you rent out your space?" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No" } ], 
+                      "pairs": [ { "value": "0" } ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, 
+        {
+          "name": "D1_6_RENTERS", 
+          "labels": [ { "text": "D1.6 Renters" } ], 
+          "recordType": "2", 
+          "occurrences": {
+            "required": false, 
+            "maximum": 20
+          }, 
+          "items": [
+            {
+              "name": "FIRST", 
+              "labels": [ { "text": "RentersFirst" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "LAST", 
+              "labels": [ { "text": "Last" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "CONTACT", 
+              "labels": [ { "text": "Contact" } ], 
+              "contentType": "alpha", 
+              "length": 12
+            }, 
+            {
+              "name": "ADD_ANOTHER", 
+              "labels": [ { "text": "Do you want to add another?" } ], 
+              "contentType": "numeric", 
+              "length": 1, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "ADD_ANOTHER_VS1", 
+                  "labels": [ { "text": "Do you want to add another?" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No" } ], 
+                      "pairs": [ { "value": "0" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "HOW_MUCH_RENT", 
+              "labels": [ { "text": "How much is the rent" } ], 
+              "contentType": "numeric", 
+              "length": 6, 
+              "zeroFill": false
+            }
+          ]
+        }, 
+        {
+          "name": "ADDRESS", 
+          "labels": [ { "text": "Address" } ], 
+          "recordType": "3", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "HOUSE_NUMBER", 
+              "labels": [ { "text": "House Number" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "STREET", 
+              "labels": [ { "text": "Street" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "BARANGAY", 
+              "labels": [ { "text": "Barangay" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "CITY", 
+              "labels": [ { "text": "City" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "OTHER_ADDRESS", 
+              "labels": [ { "text": "Do you have other address?" } ], 
+              "contentType": "numeric", 
+              "length": 1, 
+              "zeroFill": false, 
+              "valueSets": [
+                {
+                  "name": "OTHER_ADDRESS_VS1", 
+                  "labels": [ { "text": "Do you have other address?" } ], 
+                  "values": [
+                    {
+                      "labels": [ { "text": "Yes" } ], 
+                      "pairs": [ { "value": "1" } ]
+                    }, 
+                    {
+                      "labels": [ { "text": "No" } ], 
+                      "pairs": [ { "value": "0" } ]
+                    }
+                  ]
+                }
+              ]
+            }, 
+            {
+              "name": "OTHER_ADDRESS_1", 
+              "labels": [ { "text": "Other Address" } ], 
+              "contentType": "alpha", 
+              "length": 50
+            }, 
+            {
+              "name": "ID_PRESENTED", 
+              "labels": [ { "text": "ID presented" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }, 
+            {
+              "name": "ID_NUMBER", 
+              "labels": [ { "text": "ID Number" } ], 
+              "contentType": "alpha", 
+              "length": 30
+            }
+          ]
+        }, 
+        {
+          "name": "RENTER_SUMMARY", 
+          "labels": [ { "text": "Renter Summary" } ], 
+          "recordType": "4", 
+          "occurrences": {
+            "required": true, 
+            "maximum": 1
+          }, 
+          "items": [
+            {
+              "name": "TOTAL_RENTERS", 
+              "labels": [ { "text": "Total Renters" } ], 
+              "contentType": "numeric", 
+              "length": 6, 
+              "zeroFill": false
+            }, 
+            {
+              "name": "TOTAL_RENT_PER_MONTH", 
+              "labels": [ { "text": "Total Rent Per Month" } ], 
+              "contentType": "numeric", 
+              "length": 10, 
+              "zeroFill": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

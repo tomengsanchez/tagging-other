@@ -1,0 +1,12 @@
+﻿[Run Information]
+Version=8.0
+AppType=Sync
+
+[ExternalFiles]
+SES_DDICTIONARY_DICT=ses_ddictionary_dict.csdb
+
+[Parameters]
+SyncDirection=Get
+SyncType=CSWeb
+SyncUrl=https://ses.ecosyscorp.ph:443/api/
+Silent=No

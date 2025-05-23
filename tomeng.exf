@@ -1,0 +1,63 @@
+{
+  "software": "CSPro", 
+  "version": 8.0, 
+  "fileType": "export", 
+  "dictionary": "TAggingOtherOutput.csdb", 
+  "language": "EN", 
+  "output": {
+    "format": "CSV", 
+    "encoding": "ANSI", 
+    "decimalMark": "period"
+  }, 
+  "model": {
+    "separateRecords": true, 
+    "structure": "rectangular", 
+    "joinSingleRecord": false, 
+    "recordType": "none", 
+    "itemMode": "both"
+  }, 
+  "logicSettings": {
+    "version": 2.0, 
+    "caseSensitive": {
+      "symbols": false
+    }, 
+    "actionInvoker": {
+      "accessFromExternalCaller": "promptIfNoValidAccessToken", 
+      "convertResultsForLogic": true
+    }
+  }, 
+  "itemDisplay": "labels", 
+  "itemSerialization": "included", 
+  "items": [
+    {
+      "name": "PERSONAL_PROFILE"
+    }, 
+    {
+      "name": "NAME"
+    }, 
+    {
+      "name": "FIRST"
+    }, 
+    {
+      "name": "LAST"
+    }, 
+    {
+      "name": "CONTACT"
+    }, 
+    {
+      "name": "ADD_ANOTHER"
+    }, 
+    {
+      "name": "HOUSE_NUMBER"
+    }, 
+    {
+      "name": "STREET"
+    }, 
+    {
+      "name": "BARANGAY"
+    }, 
+    {
+      "name": "CITY"
+    }
+  ]
+}
